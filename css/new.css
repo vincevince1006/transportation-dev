@@ -1,33 +1,8 @@
-.col-one {
-	float:left;
-	width:48%;
-}
-
-.col-two {
-	float:right;
-	width:48%;	
-}
-
-.grayed { 
-    padding: 0.3em 0.5em 0.5em 0.8em; 
-    margin-left: 1.5em;
-    background-color: #f3f3f3;
-    line-height: 19.5px;
-    -moz-border-radius: 10px;
-	-webkit-border-radius: 10px;
-	border-radius: 10px; /* future proofing */
-}
-
-.no-margin {
-	margin: 0;
-}
-
-.long-list li {
-	list-style: none;
-}
-
-.grayed h3 {
-	text-align: center;
+/* Allows col classes to live in their own container */
+.contents {
+	display: inline-table;	
+	width: 100%;
+	max-height: 100%;
 }
 
 .contents img {
@@ -38,11 +13,18 @@
     border: 1px solid #e0e0e0;
 }
 
-.contents {
-	display: inline-table;	
-	width: 100%;
-	max-height: 100%;
+/* Assigns width and proper floats, encourages block-level flow within contents container */
+.col-one {
+	float:left;
+	width:48%;
 }
+
+.col-two {
+	float:right;
+	width:48%;	
+}
+
+/* Can live inside of .contents but not any of the col classes. This gives an inline-table container that snaps well below other .contents with col classes and adds borders. Ideal for breaking up more important and/or lengthier topics */
 
 .full {
 	display: inline-table;
@@ -52,9 +34,33 @@
 	height: 16em;
 }
 
+/* Can get paired with full to remove borders */
+
 .no-border {
 	border-top: 0 solid #e7e7e7;
 	border-bottom: 0 solid #e7e7e7;
+}
+
+/* Styling for callout. This can be used for quick overviews, bulleted lists of information. Should only be used with col-two class so it floats right */
+
+.grayed { 
+    padding: 0.3em 0.5em 0.5em 0.8em; 
+    margin-left: 1.5em;
+    margin-bottom: 1.5em;
+    background-color: #f3f3f3;
+    line-height: 19.5px;
+    -moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px; /* future proofing */
+}
+
+.grayed h3 {
+	text-align: center;
+}
+
+/* Reset for longer lists of content, cleans it up a bit */
+.long-list li {
+	list-style: none;
 }
 
 @media only screen and (max-width: 685px) {
