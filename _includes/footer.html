@@ -1,6 +1,7 @@
 </div>
 
-<!--<div class="sidebar">
+{% if page.sidebar_view %}
+<div class="sidebar">
 <li id="advanced_menu-24" class="widget widget_advanced_menu">
 
 <ul id="menu-home-and-hospital-teaching" class="menu-side">
@@ -9,12 +10,12 @@
   <li id="menu-item-8302" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8302"><a href="http://www.hcpss.org/grade/">Student Safety</a></li>
   <li id="menu-item-8302" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8302"><a href="http://www.hcpss.org/grade/">Student Safety</a></li>
 </ul>
+{% endif %}
 
 </li>
-</div>-->
 </div>
 </div>
-<!--</div>  -->
+</div>
 
 
 <div class="footer group">
@@ -123,6 +124,6 @@ $("#menu-search-drop").mouseleave(function() {
   })();
 
 </script>
-
+<script src="js/sizzle.js"></script>
 
 </body></html>
