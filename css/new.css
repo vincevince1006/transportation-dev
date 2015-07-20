@@ -58,9 +58,19 @@
 	text-align: center;
 }
 
-/* Reset for longer lists of content, cleans it up a bit */
+/* Reset for longer lists of content to remove bullets, cleans it up a bit */
 .long-list li {
 	list-style: none;
+}
+
+.question {
+    cursor:pointer;
+}
+
+.hide {
+   position: absolute !important;
+   top: -9999px !important;
+   left: -9999px !important;
 }
 
 @media only screen and (max-width: 685px) {
@@ -69,10 +79,6 @@
 	}
 	.col-two {
 		width: 100%;
-	}
-	.full {
-		margin-bottom:2em;
-		margin-top: 2em;
 	}
 	.grayed {
 		-moz-border-radius: 0;
