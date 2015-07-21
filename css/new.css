@@ -1,3 +1,22 @@
+.top-nav {
+	text-align: center;
+	margin-bottom: 1.5em;
+}
+
+.top-nav ul {
+	list-style: none;
+}
+
+.top-nav li {
+	display: inline-block;
+	margin: 0 0.5em;
+}
+
+.top-nav a {
+	font-weight: 600;
+	padding: 0.5em;
+}
+
 /* Allows col classes to live in their own container */
 .contents {
 	display: inline-table;	
@@ -14,12 +33,12 @@
 }
 
 /* Assigns width and proper floats, encourages block-level flow within .contents container */
-.col-one {
+.col-left {
 	float:left;
 	width:48%;
 }
 
-.col-two {
+.col-right {
 	float:right;
 	width:48%;	
 }
@@ -67,6 +86,11 @@
     cursor:pointer;
 }
 
+.faq-question {
+	font-size: 18px !important;
+	font-weight: 400 !important;
+}
+
 .hide {
    position: absolute !important;
    top: -9999px !important;
@@ -74,10 +98,10 @@
 }
 
 @media only screen and (max-width: 685px) {
-	.col-one {
+	.col-left {
 		width: 100%;
 	}
-	.col-two {
+	.col-right {
 		width: 100%;
 	}
 	.grayed {
@@ -85,6 +109,10 @@
 		-webkit-border-radius: 0;
 		border-radius: 0; /* future proofing */
 		margin-bottom: 1.5em;
+	}
+	.top-nav li {
+		display: block;
+		margin: 0.5em 0;
 	}
 }
 
