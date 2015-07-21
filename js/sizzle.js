@@ -3,11 +3,11 @@ var visible = true;
 $("#list p").addClass('hide');
 
 $("#list h3").click(function(){
-	$("#list p").addClass('hide');
-    //slide down the link list below the h3 clicked - only if its closed
-    $('#list h3').find('.fa-angle-up').removeClass('fa-angle-up').addClass('fa-angle-down');
+  $('#list h3').find('.fa-angle-up').removeClass('fa-angle-up').addClass('fa-angle-down');
+//slide down the link list below the h3 clicked - only if its closed
     if(!$(this).next().is( visible ))
     {
+      $("#list p").addClass('hide');
       $(this).next().slideUp(0,function(){
     	$(this).removeClass('hide')
          	.slideDown('fast')
