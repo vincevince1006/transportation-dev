@@ -17,13 +17,6 @@ $("#list h3").click(function(){
 visible = ! visible;
   });
 
-$('#timeline')(function() {
-  if (parseInt($(window).width()) < 685 {
-    $('this').removeClass('.fa-arrow-right');
-    $('this').addClass('.fa-arrow-down');
-  } 
-});
-
 $(window).resize(function(){
 if ($(window).width() <= 685) {  
   $('#timeline').find('.fa-arrow-right').removeClass('fa-arrow-right').addClass('fa-arrow-down');
