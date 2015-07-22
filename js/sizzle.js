@@ -16,3 +16,10 @@ $("#list h3").click(function(){
     }
 visible = ! visible;
   });
+
+$('#timeline')(function() {
+  if (parseInt($(window).width()) < 685 {
+    $('#timeline').removeClass('.fa-arrow-right');
+    $('#timeline').addClass('.fa-arrow-down');
+  } 
+});
