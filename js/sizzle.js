@@ -1,3 +1,11 @@
+$(window).resize(function(){
+  if ($(window).width() <= 685) {  
+    $('#timeline').find('.fa-arrow-right').removeClass('fa-arrow-right').addClass('fa-arrow-down');
+  } else if ($(window).width() >= 685) { 
+    $('#timeline').find('.fa-arrow-down').removeClass('fa-arrow-down').addClass('fa-arrow-right');
+  }
+});
+
 var visible = true;
 // gives all #list paragraph elements a default class of hide for accessibility purposes. This is instead of using 'display:none'
 $("#list p").addClass('hide');
@@ -19,7 +27,7 @@ visible = ! visible;
 
 $('#timeline')(function() {
   if (parseInt($(window).width()) < 685 {
-    $('#timeline').removeClass('.fa-arrow-right');
-    $('#timeline').addClass('.fa-arrow-down');
+    $('this').removeClass('.fa-arrow-right');
+    $('this').addClass('.fa-arrow-down');
   } 
 });
