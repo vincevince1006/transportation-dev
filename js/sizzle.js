@@ -16,3 +16,19 @@ $("#list h3").click(function(){
     }
 visible = ! visible;
   });
+
+$(document).ready(function() {
+    // run test on initial page load
+    checkSize();
+
+    // run test on resize of the window
+    $(window).resize(checkSize);
+});
+
+function checkSize() {
+  if ($('.arrow').css('display') == 'block') {  
+    $('.arrow').removeClass('fa-arrow-right').addClass('fa-arrow-down');
+  } else {
+    $('.arrow').removeClass('fa-arrow-down').addClass('fa-arrow-right');    
+  }
+};
