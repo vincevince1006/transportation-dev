@@ -18,7 +18,9 @@ visible = ! visible;
   });
 
 $(window).resize(function(){
-  if ($(window).width() < 685) {  
+  if ($(window).width() <= 685) {  
     $('#timeline').find('.fa-arrow-right').removeClass('fa-arrow-right').addClass('fa-arrow-down');
+  } else { 
+    $('#timeline').find('.fa-arrow-down').removeClass('fa-arrow-down').addClass('fa-arrow-right');
   }
 });
