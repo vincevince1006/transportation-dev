@@ -3,3 +3,4 @@ baseurl: "/transportation-dev/" # the subpath of your site, e.g. /blog/
 
 # Build settings
 markdown: kramdown
+exclude: [Guardfile]
