@@ -5,19 +5,20 @@ $("#list p").addClass('hide');
 $("#list h3").click(function(){
   $('#list h3').find('.fa-angle-down').removeClass('fa-angle-down').addClass('fa-angle-right');
 //slide down the link list below the h3 when clicked - but only if its closed
-    if(!$(this).next().is( visible ))
-    {
-      $("#list p").addClass('hide');
-      $(this).next().slideUp(0,function(){
-    	$(this).removeClass('hide')
-         	.slideDown('fast')
-  		});
+    if(!$(this).next().is( visible )) {
+        $("#list p").addClass('hide');
+        $(this).next().slideUp(0,function(){
+      	
+        $(this).removeClass('hide')
+           	.slideDown('fast')
+    	  });
+
       $(this).find('.fa-angle-right').removeClass('fa-angle-right').addClass('fa-angle-down');
     }
-visible = ! visible;
-  });
+  visible = ! visible;
+});
 
-$(document).ready(function() {
+$(function() {
     // run test on initial page load
     checkSize();
 
