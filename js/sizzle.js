@@ -1,12 +1,12 @@
 $("#list h3").click(function(){
       if($(this).next().hasClass('hide')) {
-          $(this).next().slideDown(200,function(){
-            $(this).removeClass('hide').addClass('show').removeAttr('style');
+          $(this).next().slideUp(0,function(){
+            $(this).removeClass('hide').slideDown(400);
           });
         $(this).find('.fa-angle-right').removeClass('fa-angle-right').addClass('fa-angle-down');
       } else {
-          $(this).next().slideUp(300,function(){
-            $(this).addClass('hide').removeClass('show').removeAttr('style');
+          $(this).next().slideUp(400,function(){
+            $(this).addClass('hide').removeAttr('style');
           });
         $(this).find('.fa-angle-down').removeClass('fa-angle-down').addClass('fa-angle-right');
       }
