@@ -4,7 +4,7 @@ $("#list h3").click(function(){
           $(this).find('.fa-angle-right').removeClass('fa-angle-right').addClass('fa-angle-down');
       } else {
           $(this).next().addClass('hide');
-          $('#list h3').find('.fa-angle-down').removeClass('fa-angle-down').addClass('fa-angle-right');
+          $(this).find('.fa-angle-down').removeClass('fa-angle-down').addClass('fa-angle-right');
       }
 });
 
